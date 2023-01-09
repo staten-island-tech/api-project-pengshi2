@@ -1,4 +1,4 @@
-const genshin = "https://api.jikan.moe/v4/recommendations/anime";
+const genshin = "https://api.genshin.dev/characters/";
 
 async function getData(genshin) {
   try {
@@ -7,9 +7,16 @@ async function getData(genshin) {
       throw new Error(response);
     } else {
       const data = await response.json();
-      document.getElementById("api-response").textContent =
-        data.data[0].entry[0].title;
-      console.log(data.data[0].entry[0].title);
+      data.forEach((name) => {
+        document
+          .getElementById("api-response")
+          .insertAdjacentHTML(
+            "afterbegin",
+            `<div class = "card> <h2 class = "name">${name}</h2>`
+          );
+        console.log(name);
+      });
+      console.log(data);
       console.log("horosho");
     }
   } catch (error) {
@@ -17,4 +24,5 @@ async function getData(genshin) {
     console.log("ploha");
   }
 }
+
 getData(genshin);
