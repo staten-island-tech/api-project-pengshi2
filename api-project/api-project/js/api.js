@@ -17,11 +17,11 @@ async function getData(genshin) {
         console.log(name);
       });
       console.log(data);
-      console.log("horosho");
+      console.log("ok");
     }
   } catch (error) {
     console.log(error);
-    console.log("ploha");
+    console.log("error");
   }
 }
 
