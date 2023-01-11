@@ -1,4 +1,4 @@
-const genshin = "https://api.genshin.dev/characters/";
+const genshin = "https://valorant-api.com/v1/bundles";
 
 async function getData(genshin) {
   try {
@@ -7,16 +7,15 @@ async function getData(genshin) {
       throw new Error(response);
     } else {
       const data = await response.json();
-      data.forEach((name) => {
+      console.log(data);
+      data.data.forEach((object) => {
         document
           .getElementById("api-response")
           .insertAdjacentHTML(
             "afterbegin",
-            `<div class = "card> <h2 class = "name">${name}</h2>`
+            `<div class = "card> <h2 class = "bundle">${data.data.displayName}</h2>`
           );
-        console.log(name);
       });
-      console.log(data);
       console.log("ok");
     }
   } catch (error) {
