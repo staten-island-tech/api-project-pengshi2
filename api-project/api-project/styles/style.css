@@ -10,3 +10,18 @@ main,
   flex-direction: column;
   justify-content: space-evenly;
 }
+
+.bundle-images {
+  width: 20vw;
+  align-self: center;
+}
+
+.card {
+  width: 21%;
+  text-align: center;
+  border: 3px solid black;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  
+ 
+}
