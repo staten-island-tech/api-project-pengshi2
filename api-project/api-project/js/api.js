@@ -7,7 +7,6 @@ async function getData(skins) {
       throw new Error(response);
     } else {
       const data = await response.json();
-      console.log(data);
       data.data.forEach((bundle) => {
         document.getElementById("display").insertAdjacentHTML(
           "beforeend",
