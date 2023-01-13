@@ -33,3 +33,7 @@ h2 {
   align-self: center;
 }
 
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
