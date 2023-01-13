@@ -10,9 +10,9 @@ async function getData(skins) {
       console.log(data);
       data.data.forEach((bundle) => {
         document.getElementById("display").insertAdjacentHTML(
-          "afterbegin",
-          `<div class = "card> 
-            <h2 class = "bundle">${bundle.displayName}</h2>
+          "beforeend",
+          `<div class = "card">
+            <h2 class = "bundle">${bundle.displayName} </h2>
             <img class = "bundle-images" src = ${bundle.displayIcon}> 
             </div> `
         );
