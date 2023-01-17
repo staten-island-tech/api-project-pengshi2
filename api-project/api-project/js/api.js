@@ -11,8 +11,10 @@ async function getData(skins) {
         document.getElementById("display").insertAdjacentHTML(
           "beforeend",
           `<div class = "card">
-            <h2 class = "bundle">${bundle.displayName} </h2>
-            <img class = "bundle-images" src = ${bundle.displayIcon}> 
+          <div id = "${bundle.displayName}">
+            <h2 class = "bundle"> ${bundle.displayName} </h2>
+            <img class = "bundle-images" src = ${bundle.displayIcon} alt = ""> 
+            </div>
             </div> `
         );
       });
@@ -23,5 +25,4 @@ async function getData(skins) {
     console.log("error");
   }
 }
-
 getData(skins);

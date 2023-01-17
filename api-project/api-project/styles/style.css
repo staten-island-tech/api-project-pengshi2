@@ -37,3 +37,11 @@ h1 {
   text-align: center;
   margin-bottom: 10px;
 }
+
+.filters {
+  position: absolute;
+}
+
+#header {
+  text-align: center;
+}
