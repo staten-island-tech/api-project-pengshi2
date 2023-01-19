@@ -1,4 +1,4 @@
-import { DOMSelectors } from "./dom";
+import { DOM } from "./dom";
 
 const skins = "https://valorant-api.com/v1/bundles";
 
@@ -29,14 +29,18 @@ async function getData(skins) {
 }
 getData(skins);
 
-DOMSelectors.form.addEventListener("submit", function () {
-  reset();
-  event.preventDefault();
-});
+// DOM.form.addEventListener("submit", function () {
+//   reset();
+//   event.preventDefault();
+// });
 
 function getSkin() {
   let bundleName = document.skinbar.name.value;
   console.log(bundleName);
 }
+function reset() {
+  document.display.innerHTML = ``;
+}
 
-getSkin();
+const displayDiv = document.querySelector("#display");
+displayDiv.innerHTML = ``;
