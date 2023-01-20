@@ -20,6 +20,7 @@ async function getData(skins) {
             </div> `
         );
       });
+
       console.log("ok");
     }
   } catch (error) {
@@ -29,18 +30,17 @@ async function getData(skins) {
 }
 getData(skins);
 
-// DOM.form.addEventListener("submit", function () {
-//   reset();
-//   event.preventDefault();
-// });
-
-function getSkin() {
-  let bundleName = document.skinbar.name.value;
-  console.log(bundleName);
-}
 function reset() {
   document.display.innerHTML = ``;
 }
+function apple() {
+  document.querySelector("#display").innerHTML = ``;
+}
 
-const displayDiv = document.querySelector("#display");
-displayDiv.innerHTML = ``;
+apple();
+// data.forEach((data) => {
+//   document.getElementById("display")
+//     .insertAdjacentHTML("beforeend"`<div class = "list">
+//   <li> ${bundle.displayName}</li>
+//   </div>`);
+// });
