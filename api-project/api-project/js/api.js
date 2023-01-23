@@ -1,7 +1,7 @@
 const skins = "https://valorant-api.com/v1/bundles";
 
 const DOM = {
-  form: document.getElementById("skinbar"),
+  form: document.getElementById("#skinbar"),
   name: document.getElementById("name"),
   card: document.getElementsByClassName("card"),
 };
@@ -33,3 +33,9 @@ async function getData(skins) {
   }
 }
 getData(skins);
+
+document.form.addEventListener("submit", function () {
+  event.preventDefault();
+});
+
+PPAP();
