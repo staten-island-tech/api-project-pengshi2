@@ -1,6 +1,10 @@
-import { DOM } from "./dom";
-
 const skins = "https://valorant-api.com/v1/bundles";
+
+const DOM = {
+  form: document.getElementById("skinbar"),
+  name: document.getElementById("name"),
+  card: document.getElementsByClassName("card"),
+};
 
 async function getData(skins) {
   try {
@@ -29,18 +33,3 @@ async function getData(skins) {
   }
 }
 getData(skins);
-
-function reset() {
-  document.display.innerHTML = ``;
-}
-function apple() {
-  document.querySelector("#display").innerHTML = ``;
-}
-
-apple();
-// data.forEach((data) => {
-//   document.getElementById("display")
-//     .insertAdjacentHTML("beforeend"`<div class = "list">
-//   <li> ${bundle.displayName}</li>
-//   </div>`);
-// });
