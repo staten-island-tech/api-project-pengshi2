@@ -33,9 +33,3 @@ async function getData(skins) {
   }
 }
 getData(skins);
-
-document.form.addEventListener("submit", function () {
-  event.preventDefault();
-});
-
-PPAP();
