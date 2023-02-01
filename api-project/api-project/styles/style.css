@@ -9,8 +9,9 @@ main,
 }
 
 .bundle-images {
-  width: 14vw;
-  height: 6.9vw;
+  width: 90%
+  
+
 }
 
 #display {
@@ -21,16 +22,18 @@ main,
 }
 
 .card {
-  width: 17%;
+  width: 40%;
    text-align: center;
    border: 3px solid black;
    margin-bottom: 20px;
    margin-top: 75px;
-   height: 11rem;
+   padding: 1rem;
+
 }
 
 h2 {
   font-size: 1.2rem;
+  margin-bottom: 1rem;
   align-self: center;
 }
 
