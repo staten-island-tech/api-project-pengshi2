@@ -47,11 +47,16 @@ document.querySelector("#random").addEventListener("click", function () {
   displayDiv.innerHTML = ``;
   pear();
 });
+
+document.querySelector("#great").addEventListener("click", function () {
+  displayDiv.innerHTML = ``;
+  bananna();
+});
 async function bananna() {
   const response = await fetch(skins);
   const info = await response.json();
   info.data
-    .filter((bundle) => bundle.displayName.includes("Spectrum"))
+    .filter((bundle) => bundle.displayName.includes("Prime"))
     .forEach((bundle) =>
       document.getElementById("display").insertAdjacentHTML(
         "beforeend",
