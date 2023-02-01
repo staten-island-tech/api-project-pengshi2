@@ -1,4 +1,3 @@
-import { DOM } from "./dom";
 const skins = "https://valorant-api.com/v1/bundles";
 
 async function getData(skins) {
