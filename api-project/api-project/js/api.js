@@ -51,6 +51,7 @@ document.querySelector("#great").addEventListener("click", function () {
   displayDiv.innerHTML = ``;
   bananna();
 });
+
 async function bananna() {
   const response = await fetch(skins);
   const info = await response.json();
