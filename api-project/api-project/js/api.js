@@ -14,7 +14,7 @@ async function getData(skins) {
           `<div class = "card">
           <div id = "${bundle.displayName}">
             <h2 class = "bundle"> ${bundle.displayName} </h2>
-            <img class = "bundle-images" src = ${bundle.displayIcon} alt = ""> 
+            <img class = "bundle-images" src = ${bundle.displayIcon} alt = "image"> 
             </div>
             </div> `
         );
