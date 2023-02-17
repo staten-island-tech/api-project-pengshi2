@@ -14,7 +14,7 @@ async function getData(skins) {
           `<div class = "card">
           <div id = "${bundle.displayName}">
             <h2 class = "bundle"> ${bundle.displayName} </h2>
-            <img class = "bundle-images" src = ${bundle.displayIcon} alt = "image"> 
+            <img class = "bundle-images" src = ${bundle.displayIcon} alt = "${bundle.displayName}"> 
             </div>
             </div> `
         );
@@ -63,7 +63,7 @@ async function bananna() {
         `<div class = "card">
       <div id = "${bundle.displayName}">
       <h2 class = "bundle"> ${bundle.displayName} </h2>
-      <img class = "bundle-images" src = ${bundle.displayIcon} alt = ""> 
+      <img class = "bundle-images" src = ${bundle.displayIcon} alt = "${bundle.displayName}"> 
       </div>
       </div>`
       )
@@ -79,7 +79,7 @@ async function apple() {
       `<div class = "card">
       <div id = "${bundle.displayName}">
       <h2 class = "bundle"> ${bundle.displayName} </h2>
-      <img class = "bundle-images" src = ${bundle.displayIcon} alt = ""> 
+      <img class = "bundle-images" src = ${bundle.displayIcon} alt = "${bundle.displayName}"> 
       </div>
       </div>`
     )
@@ -96,7 +96,7 @@ async function pear() {
     `<div class = "card">
     <div id = "${bundle.displayName}">
       <h2 class = "bundle"> ${bundle.displayName} </h2>
-      <img class = "bundle-images" src = ${bundle.displayIcon} alt = ""> 
+      <img class = "bundle-images" src = ${bundle.displayIcon} alt = "${bundle.displayName}"> 
       </div>
       </div> `
   );
@@ -115,7 +115,7 @@ async function orange() {
         `<div class = "card">
   <div id = "${bundle.displayName}">
     <h2 class = "bundle"> ${bundle.displayName} </h2>
-    <img class = "bundle-images" src = ${bundle.displayIcon} alt = ""> 
+    <img class = "bundle-images" src = ${bundle.displayIcon} alt = "${bundle.displayName}"> 
     </div>
     </div> `
       )
